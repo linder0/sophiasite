@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #e5e5e5;
+  --transition-duration: 0.4s;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  transition: background-color var(--transition-duration) ease,
+              color var(--transition-duration) ease;
+}
+
+.themed-bg {
+  background-color: var(--bg-color);
+  transition: background-color var(--transition-duration) ease;
+}
+
+.themed-text {
+  color: var(--text-color);
+  transition: color var(--transition-duration) ease;
+}
+
+.themed-border {
+  border-color: var(--border-color);
+  transition: border-color var(--transition-duration) ease;
+}
+
+/* Minimal prose styles */
+.prose {
+  @apply text-black;
+}
+
+.prose p {
+  @apply mb-6 leading-relaxed;
+}
+
+/* Crossword styling overrides for minimal aesthetic */
+.crossword-container {
+  @apply my-8;
+}
+
+.crossword {
+  @apply font-sans;
+}
+
+.crossword-grid {
+  @apply border-black;
+}
+
+/* Smooth transitions for hover effects */
+a,
+button {
+  @apply transition-opacity duration-200;
+}
