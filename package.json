@@ -1,21 +1,26 @@
 {
-  "name": "sophjakim",
+  "name": "vroom",
   "version": "1.0.0",
-  "description": "Sophia Kim's crossword and writing website",
+  "description": "VROOM - Full-stack event operations company",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
-  "author": "Sophia Kim",
+  "author": "VROOM",
   "license": "ISC",
   "dependencies": {
-    "@guardian/react-crossword": "^14.0.0",
+    "katex": "^0.16.28",
     "lucide-react": "^0.563.0",
     "next": "^16.1.6",
+    "notion-client": "^7.7.3",
+    "notion-types": "^7.7.3",
+    "notion-utils": "^7.7.3",
+    "prismjs": "^1.30.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-notion-x": "^7.7.3"
   },
   "devDependencies": {
     "@types/node": "^25.2.2",

@@ -28,9 +28,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     // Apply theme to document
-    document.documentElement.style.setProperty("--bg-color", theme.background);
-    document.documentElement.style.setProperty("--text-color", theme.text);
-    document.documentElement.style.setProperty("--border-color", theme.border);
+    if (theme && theme.background) {
+      document.documentElement.style.setProperty("--bg-color", theme.background);
+      document.documentElement.style.setProperty("--text-color", theme.text);
+      document.documentElement.style.setProperty("--border-color", theme.border);
+    }
   }, [theme]);
 
   const randomizeTheme = () => {

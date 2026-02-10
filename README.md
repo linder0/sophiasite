@@ -1,14 +1,20 @@
-# Sophia Kim - Crosswords & Writing
+# VROOM
 
-A minimal, elegant website for Sophia Kim featuring crossword puzzles, writing, book reviews, and movie reviews.
+> We automate the logistical backbone of events so hosts can focus on taste, intention, and the people in the room.
 
-## Features
+A full-stack event operations company website built with Next.js.
 
-- **Interactive Crossword Logo**: Landing page features "SOPHIA" and "KIM" intersecting at the shared "I"
-- **Playable Crosswords**: Full crossword puzzle player with clue navigation and answer checking
-- **Blog**: Writing about crosswords, language, and wordplay
-- **Bookshelf**: Book reviews with ratings and cover display
-- **Movies**: Film reviews with ratings and poster display
+## About VROOM
+
+VROOM is a full-stack event operations company. We automate the logistical backbone of events — venues, vendors, coordination, execution — so that hosts can focus on taste, intention, and human judgment.
+
+In-person gatherings shape culture, relationships, and trust. But today, hosting a good one requires either an exhaustive network of providers, or exhausting operational work. VROOM exists to remove this friction, allowing anyone to host an event.
+
+## Services
+
+- **VROOM Nights**: One-off events, done properly
+- **VROOM Select**: White-label execution for relationship-critical events
+- **VROOM Partnerships**: Long-term collaboration for cultural infrastructure
 
 ## Tech Stack
 
@@ -16,14 +22,13 @@ A minimal, elegant website for Sophia Kim featuring crossword puzzles, writing, 
 - **React 18**
 - **TypeScript**
 - **Tailwind CSS 3**
-- **@guardian/react-crossword** for interactive crossword functionality
 
 ## Design
 
-- Clean, minimal aesthetic with white background
-- Helvetica font family
+- Clean, minimal aesthetic
+- Brand colors: Cream (#E8E4DE), Burgundy (#8B2020), Navy (#1E3A5F), Forest Green (#2D4A3E)
 - Responsive layout for all screen sizes
-- Maximum content width of 1200px
+- Color-themed sections for each service
 
 ## Getting Started
 
@@ -41,57 +46,27 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Project Structure
+## Site Structure
 
 ```
-├── app/                    # Next.js App Router pages
-│   ├── page.tsx           # Landing page with crossword logo
-│   ├── crosswords/        # Crossword puzzles
-│   ├── blog/              # Blog posts
-│   ├── books/             # Book reviews
-│   └── movies/            # Movie reviews
-├── components/            # React components
-│   ├── Navigation.tsx     # Site navigation
-│   ├── CrosswordLogo.tsx  # Landing page crossword
-│   └── CrosswordPlayer.tsx # Playable crossword component
-├── data/                  # Content data files
-│   ├── crosswords.ts      # Crossword puzzle data
-│   ├── blog.ts            # Blog post content
-│   ├── books.ts           # Book reviews
-│   └── movies.ts          # Movie reviews
-└── lib/                   # Utility functions
-    └── crosswordUtils.ts  # Crossword data transformation
+/                      → Home (minimal logo)
+/what-is-vroom         → About & Overview
+/vroom-nights          → One-off Events
+/vroom-select          → White-label Execution
+/vroom-partnerships    → Long-term Collaboration
 ```
 
-## Adding Content
+## Contact
 
-### Crosswords
+- **Email**: xuelinda7@gmail.com
+- **Calendly**: [Schedule a call](https://calendly.com)
 
-Edit `data/crosswords.ts` to add new crossword puzzles. Each crossword needs:
-- Unique ID
-- Title, difficulty, and date
-- Across and down clues with answers and positions
+## Connect
 
-### Blog Posts
-
-Edit `data/blog.ts` to add new blog posts. Each post needs:
-- Unique slug
-- Title, date, and excerpt
-- Full content text
-
-### Book Reviews
-
-Edit `data/books.ts` to add new book reviews. Each review needs:
-- Unique ID
-- Title, author, and cover image path
-- Rating (1-5), date read, and review text
-
-### Movie Reviews
-
-Edit `data/movies.ts` to add new movie reviews. Each review needs:
-- Unique ID
-- Title, year, director, and poster image path
-- Rating (1-5), date watched, and review text
+- **LinkedIn**: [linkedin.com/company/usevroom](https://www.linkedin.com/company/usevroom/)
+- **X (Twitter)**: [@usevroom](https://x.com/usevroom)
+- **Instagram**: [@usevroom](https://instagram.com/usevroom)
+- **TikTok**: [@usevroom](https://tiktok.com/@usevroom)
 
 ## Building for Production
 
@@ -103,3 +78,7 @@ npm start
 ## License
 
 ISC
+
+---
+
+*VROOM exists to remove friction, allowing anyone to host an event.*

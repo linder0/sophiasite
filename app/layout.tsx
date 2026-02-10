@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
-import ThemeDice from "@/components/ThemeDice";
+import SocialLinks from "@/components/SocialLinks";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sophia Kim - Crosswords & Writing",
-  description: "Crossword puzzles, writing, and reviews by Sophia Kim",
+  title: "VROOM - Event Operations Company",
+  description: "We automate the logistical backbone of events so hosts can focus on taste, intention, and the people in the room.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="font-sans antialiased themed-bg themed-text">
         <ThemeProvider>
           <Navigation />
-          <ThemeDice />
+          <SocialLinks />
           <main className="ml-48 mr-48">{children}</main>
         </ThemeProvider>
       </body>

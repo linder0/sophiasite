@@ -1,12 +1,17 @@
+/* Notion styles - must come before @tailwind */
+@import 'react-notion-x/src/styles.css';
+@import 'prismjs/themes/prism-tomorrow.css';
+@import 'katex/dist/katex.min.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --bg-color: #ffffff;
+  --bg-color: #f7f7f7;
   --text-color: #000000;
   --border-color: #e5e5e5;
-  --transition-duration: 0.4s;
+  --transition-duration: 0.15s;
 }
 
 html,
@@ -66,4 +71,19 @@ body {
 a,
 button {
   @apply transition-opacity duration-200;
+}
+
+/* Notion content alignment */
+.notion-page-wrapper {
+  @apply w-full;
+}
+
+.notion-content .notion {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.notion-content .notion-page {
+  padding: 0 !important;
+  width: 100% !important;
 }
